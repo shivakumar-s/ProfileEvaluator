@@ -1,0 +1,289 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cvcrop.profileevaluator.EvaluateFragment"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:id="@+id/peInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please fill in to evaluate your Profile"
+
+
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="2dp"
+        app:layout_constraintHorizontal_bias="0.948"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/academicdetails_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="39dp"
+        android:text="Acadamic Details"
+        android:textColor="#000"
+        app:layout_constraintHorizontal_bias="0.029"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="364dp"
+        android:layout_height="324dp"
+        android:background="@drawable/my_custom_background"
+        android:id="@+id/constraintLayout"
+
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.36">
+
+        <TextView
+            android:id="@+id/currentdegree_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+
+
+            android:layout_marginTop="16dp"
+            android:text="Current Degree"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="16dp" />
+
+    <android.support.v7.widget.AppCompatAutoCompleteTextView
+        android:id="@+id/current_degree_atext"
+        android:layout_width="142dp"
+        android:layout_height="32dp"
+
+
+        app:layout_constraintLeft_toLeftOf="@+id/currentdegree_text"
+        app:layout_constraintTop_toBottomOf="@+id/currentdegree_text" />
+
+
+        <TextView
+            android:id="@+id/currentmajor_text"
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:text="Current Major"
+
+
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp"
+            app:layout_constraintLeft_toRightOf="@+id/currentdegree_text"
+            android:layout_marginLeft="102dp"
+            android:layout_marginStart="102dp" />
+
+        <android.support.v7.widget.AppCompatAutoCompleteTextView
+            android:id="@+id/current_major_atext"
+            android:layout_width="142dp"
+            android:layout_height="32dp"
+
+            app:layout_constraintLeft_toLeftOf="@+id/currentmajor_text"
+            app:layout_constraintTop_toBottomOf="@+id/currentmajor_text" />
+
+        <TextView
+            android:id="@+id/celleges_text"
+            android:layout_width="158dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:text="College/University"
+            app:layout_constraintTop_toBottomOf="@+id/current_degree_atext"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:layout_editor_absoluteY="81dp" />
+
+        <android.support.v7.widget.AppCompatAutoCompleteTextView
+            android:id="@+id/colleges_atext"
+            android:layout_width="143dp"
+            android:layout_height="33dp"
+
+            app:layout_constraintDimensionRatio=""
+            android:layout_marginLeft="0dp"
+            app:layout_constraintLeft_toLeftOf="@+id/celleges_text"
+            android:layout_marginTop="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/celleges_text" />
+        <TextView
+            android:id="@+id/yop_text"
+            android:layout_width="91dp"
+            android:layout_height="19dp"
+            android:text="Year of Passing"
+
+            android:layout_marginTop="19dp"
+            app:layout_constraintTop_toBottomOf="@+id/current_major_atext"
+            android:layout_marginLeft="-11dp"
+            app:layout_constraintLeft_toLeftOf="@+id/current_major_atext" />
+        <Spinner
+            android:id="@+id/yop_spinner"
+            android:layout_width="142dp"
+            android:layout_height="30dp"
+
+            android:layout_marginLeft="0dp"
+            app:layout_constraintLeft_toLeftOf="@+id/yop_text"
+            android:layout_marginTop="-1dp"
+            app:layout_constraintTop_toBottomOf="@+id/yop_text" />
+
+        <EditText
+            android:id="@+id/percentage"
+            android:layout_width="112dp"
+            android:layout_height="30dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+
+            android:layout_marginLeft="0dp"
+            app:layout_constraintLeft_toLeftOf="@+id/percentage_text"
+            android:layout_marginTop="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/percentage_text"
+            tools:layout_editor_absoluteY="179dp" />
+        <TextView
+            android:id="@+id/percentage_text"
+            android:layout_width="93dp"
+            android:layout_height="19dp"
+            android:text="Percentage"
+
+            android:layout_marginLeft="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="19dp"
+            app:layout_constraintTop_toBottomOf="@+id/colleges_atext" />
+        <TextView
+            android:id="@+id/gpa_text"
+            android:layout_width="70dp"
+            android:layout_height="19dp"
+            android:text="GPA"
+
+            app:layout_constraintLeft_toRightOf="@+id/percentage_text"
+            android:layout_marginLeft="34dp"
+            android:layout_marginBottom="-7dp"
+            app:layout_constraintBottom_toTopOf="@+id/percentage" />
+
+        <EditText
+            android:id="@+id/gpa"
+            android:layout_width="92dp"
+            android:layout_height="27dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:layout_marginLeft="-11dp"
+            app:layout_constraintLeft_toLeftOf="@+id/gpa_text"
+            android:layout_marginTop="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/gpa_text" />
+        <TextView
+            android:id="@+id/backlogs_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Backlogs"
+
+            app:layout_constraintLeft_toRightOf="@+id/gpa_text"
+            android:layout_marginLeft="46dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginBottom="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/gpa" />
+
+        <EditText
+            android:id="@+id/backlogs"
+            android:layout_width="76dp"
+            android:layout_height="25dp"
+            android:ems="10"
+            android:inputType="number"
+
+            android:layout_marginLeft="-11dp"
+            app:layout_constraintLeft_toLeftOf="@+id/backlogs_text"
+            android:layout_marginTop="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/backlogs_text" />
+        <TextView
+            android:id="@+id/experience_text"
+            android:layout_width="140dp"
+            android:layout_height="26dp"
+            android:text="Experience if any?"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="21dp"
+            app:layout_constraintTop_toBottomOf="@+id/percentage"
+            tools:layout_editor_absoluteY="231dp" />
+
+        <EditText
+            android:id="@+id/experience"
+            android:layout_width="129dp"
+            android:layout_height="29dp"
+            android:ems="10"
+            android:inputType="number"
+            android:layout_marginLeft="0dp"
+            app:layout_constraintLeft_toLeftOf="@+id/experience_text"
+            android:layout_marginTop="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/experience_text" />
+        <TextView
+            android:id="@+id/domain_text"
+            android:layout_width="102dp"
+            android:layout_height="25dp"
+            android:text="Domain"
+
+
+            android:layout_marginRight="42dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="26dp"
+            app:layout_constraintTop_toBottomOf="@+id/backlogs" />
+
+        <android.support.v7.widget.AppCompatAutoCompleteTextView
+            android:id="@+id/domain"
+            android:layout_width="134dp"
+            android:layout_height="29dp"
+            android:layout_marginLeft="0dp"
+            app:layout_constraintLeft_toLeftOf="@+id/domain_text"
+            android:layout_marginTop="1dp"
+            app:layout_constraintTop_toBottomOf="@+id/domain_text" />
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="228dp"
+        android:layout_height="50dp"
+        android:text="universities will be listed based on the data you give Every data will be considered to filter universities"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="26dp"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        app:layout_constraintLeft_toRightOf="@+id/textView5"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.355"
+        android:layout_marginTop="26dp"
+
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+
+</android.support.constraint.ConstraintLayout>

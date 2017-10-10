@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">Profile Evaluator</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+
+    <!-- parse_server_url -->
+    <string name="parse_server_url">http://www.profileevaluator.com/parse/</string>
+
+
+    <!-- parse_app_id -->
+    <string name="parse_app_id">DZBOXpE3uzsa4EVXIVYY45qdsVZChtIt6x8IV583</string>
+
+    <!-- String array for Current Degree Spinner -->
+    <string-array name="current_degree">
+        <item>B.E/B.Tech</item>
+        <item>B.Sc</item>
+        <item>MCA</item>
+        <item>MBA</item>
+        <item>M.Tech</item>
+        <item>Any Other UG</item>
+        <item>Any Other PG</item>
+
+    </string-array>
+
+    <!-- Desired Course Spinner -->
+    <string-array name="desired_courses">
+        <item>M.S</item>
+        <item>M.E</item>
+        <item>P.H.D</item>
+
+    </string-array>
+
+    <!-- Addmission Cycle Spinner -->
+    <string-array name="admission_cycle">
+        <item>Fall</item>
+        <item>Next Fall</item>
+        <item>Spring</item>
+        <item>Next Spring</item>
+        <item>Summer</item>
+        <item>Next Summer</item>
+
+    </string-array>
+
+    <!-- String array for Current Major Spinner -->
+    <string-array name="current_major">
+        <item>CSE</item>
+        <item>IT</item>
+        <item>ECE</item>
+        <item>EEE</item>
+        <item>Mech</item>
+        <item>Civil</item>
+        <item>AIE</item>
+        <item>EIE</item>
+        <item>Chemical</item>
+        <item>Aeronotical</item>
+        <item>Agriculture</item>
+        <item>Automobile</item>
+        <item>Bio Technology</item>
+        <item>Any other</item>
+    </string-array>
+
+    <!-- String array for Colleges Spinner -->
+    <string-array name="colleges">
+        <item>IIT</item>
+        <item>NIT</item>
+        <item>IIIT</item>
+        <item>BITS</item>
+        <item>Any other University</item>
+        <item>Any Other University Affliated</item>
+        <item>Any Other College</item>
+
+    </string-array>
+
+
+    <!-- String array for domains Spinner -->
+    <string-array name="domains">
+        <item>S/W Engg (Java)</item>
+        <item>S/W Engg (.Net)</item>
+        <item>S/W Engg(App Dev)</item>
+        <item>S/W Engg(any other)</item>
+        <item>DBA</item>
+        <item>Sys Admin</item>
+        <item>Any other</item>
+
+    </string-array>
+
+
+</resources>
