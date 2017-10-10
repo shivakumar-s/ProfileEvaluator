@@ -45,7 +45,28 @@ public class MainActivity extends AppCompatActivity
 
         System.out.println("@@@@@@@@@@@@@@@@@@@@@@@");
 
+        Parse.initialize(new Parse.Configuration.Builder(this)
+                .applicationId("DZBOXpE3uzsa4EVXIVYY45qdsVZChtIt6x8IV583")
+                .server("http://www.profileevaluator.com/parse")
+                .build()
+        );
 
+        ParseQuery<ParseObject> query = ParseQuery.getQuery("UniversitiesData");
+
+
+        query.getInBackground("xWMyZ4YEGZ", new GetCallback<ParseObject>() {
+            public void done(ParseObject object, ParseException e) {
+                if (e == null) {
+                   System.out.println("success"+object);
+                } else {
+                    // something went wrong
+                    System.out.println("fail"+object);
+                    System.out.println();
+                    e.printStackTrace();
+                    System.out.println();
+                }
+            }
+        });
 
         // Code for Email
         /*
