@@ -51,6 +51,7 @@ public class MainActivity extends AppCompatActivity
                 .build()
         );
 
+       // Parse Api
         ParseQuery<ParseObject> query = ParseQuery.getQuery("UniversitiesData");
 
 
